@@ -1,5 +1,6 @@
 # GuWiki 🇮🇳
 
+![](src/public/demo.gif)
 
 **Gujarati Language Model & Automatic Speech Recognition (ASR) System Built from Scratch**
 
@@ -10,8 +11,6 @@ The goal is simple:
 > Bring Gujarati knowledge, speech, and AI together in one place.
 
 ---
-
-## 🚀 Features
 
 ### 🧠 Gujarati Language Model
 
