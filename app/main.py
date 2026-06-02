@@ -3,11 +3,14 @@ from fastapi import (
     UploadFile,
     File
 )
-
+import os
 import tempfile
 from fastapi.middleware.cors import CORSMiddleware
 from huggingface_hub import login
-login(os.getenv("hf_token"))
+from dotenv import load_dotenv
+load_dotenv()
+hf_token = os.getenv("hf_token")
+login(token=hf_token)
 from app.asr import transcribe
 from app.llm import generate_answer
 
