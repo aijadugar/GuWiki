@@ -7,7 +7,7 @@ from fastapi import (
 import tempfile
 from fastapi.middleware.cors import CORSMiddleware
 from huggingface_hub import login
-login("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")
+login(os.getenv("hf_token"))
 from app.asr import transcribe
 from app.llm import generate_answer
 
